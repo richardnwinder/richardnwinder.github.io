@@ -1,0 +1,225 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+<head>
+
+  <title>Winder Resource</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Golang and Web Developer how tos, blogs, and web pages">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="../../index/site.webmanifest">
+  <link rel="apple-touch-icon" href="../../index/icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="../../index/css/normalize.css">
+  
+  <link rel="stylesheet" href="../../index/css/base.css">
+  <link rel="stylesheet" href="../../index/css/button.css">
+  <link rel="stylesheet" href="../../index/css/columns.css">
+  <link rel="stylesheet" href="../../index/css/container.css">
+  <link rel="stylesheet" href="../../index/css/image.css">
+  <link rel="stylesheet" href="../../index/css/navbar.css">
+  <link rel="stylesheet" href="../../index/css/panel.css">
+  <link rel="stylesheet" href="../../index/css/section.css">
+  <link rel="stylesheet" href="../../index/css/tag.css">
+  <link rel="stylesheet" href="../../index/css/title.css">
+  
+  <link rel="stylesheet" href="../../index/css/flags.css">
+  <link rel="stylesheet" href="../../index/css/user.css">
+
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+			 <!-- background-image: url('img/layout/background-lowres.jpg');
+			 background-repeat: no-repeat;
+			 background-attachment: fixed;
+			 background-size: 100% 100%;" -->
+			 
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+    <!-- <div class="container"> -->
+    <div class="navbar-brand">
+			<a class="navbar-item" href="../index.html">
+        <img class="logo" src="../img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+				<!-- <h1 style="margin:0px;padding:0px;" class="logo grey">Devel2Go</h1>
+				<h3 class="link-item">devel2go.com</h3> -->
+			</a>
+			
+			<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+		
+		<div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+            <div class="navbar-item  is-hoverable" id="language">
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Project
+                </a>
+                <div class="navbar-dropdown">
+                    <a href="../project/go-encrypt/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Go-Encrypt
+                    </a>
+                    <a href="../project/js-quick/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        JS-Quick
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Help
+                </a>
+                <div class="navbar-dropdown">
+                    <a href="index/project/go-encrypt/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Git Commands
+                    </a>
+                    
+                </div>
+            </div>
+				    <a href="../snippet/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+              Snippet
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                  Blog
+                </a>
+                <div class="navbar-dropdown">
+                    <a href="../blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Golang
+                    </a>
+                    <a href="../blog/nodejs/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        NodeJS
+                    </a>
+                    <a href="../blog/webpage/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        WebPage
+                    </a>
+                </div>
+            </div>
+				
+			      <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    About Us
+                </a>
+                <div class="navbar-dropdown">
+                    <a href="../about/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        About
+                    </a>
+                    <a href="../team/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Team
+                    </a>
+                </div>
+            </div>
+				
+			      <a href="../contact/" class="navbar-item">
+                <button class="button is-medium is-primary">
+                    <span class="is-uppercase is-size-7 has-text-weight-semibold">
+                        Contact
+                    </span>
+                </button>
+            </a>
+				
+          </div>
+      </div>
+  </nav>
+  
+  <div class="columns is-fullheight">
+	<div class="column is-2 is-sidebar-menu is-hidden-mobile" style="border-right:1px solid #888;overflow:hidden;">
+		<aside class="menu">
+			<img class="image" src="../img/branding/faceid.jpg" alt="Face Image">
+			<a href="../contact/">  Richard Winder</a>
+			<hr>
+			<p class="menu-label">General</p>
+			<ul class="menu-list">
+				<li><a>Dashboard longer</a></li>
+				<li><a>Customers</a></li>
+			</ul>
+		</aside>
+	</div>
+	<div class="column is-main-content">
+		<!-- Main Content -->
+  
+	  <section class="section">
+		<div class="container">
+			<h1 class="title is-3">Golang Blogs</h1>
+			<p class="subtitle is-5">The Golang programming language has been around for sometime now. It affords the programmer great resources, compiling to many varied platforms.</p>
+		</div>
+	  </section>
+  
+	  <section class="section">
+		<div class="container"> 
+			<div class="columns">
+				<div class="column is-one-quarter">
+					<div class="image is-2by1">
+						<a href="/golang/plumbing-the-syscall-library-for-microsoft-windows-os.html"><img src="./golang/img/Plumbing-the-sysCall-library-for-Microsoft-Windows-OS.png" alt=""></a>
+					</div>
+				</div>
+				<div class="column is-three-quarters">
+					<h2 class="title is-3">
+						<a href="./golang/plumbing-the-syscall-library-for-microsoft-windows-os.html">Plumbing the sysCall library for the Microsoft Windows OS.</a>
+					</h2>
+					<div class="subtitle is-6"> 
+						<a href="/categories/golang">
+							<span class="tag golang">Golang</span>
+						</a>
+						  
+						<a href="./golang/plumbing-the-syscall-library-for-microsoft-windows-os.html">
+							<span class="icon">
+								<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+							</span>
+							April 26, 2020
+						</a>
+					</div>
+					<p>The sysCall library is built in to the main source and offers many possibilities to create os specific frameworks. These blogs have been written whislt exploring the many apps that have been created here at Devel2Go.</p>
+					<div>
+						<a href="./golang/plumbing-the-syscall-library-for-microsoft-windows-os.html">Continue Reading</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	  </section>
+	 </div>
+  </div>
+  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+  
+  <script src="../index/js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/cookie.js"></script>
+  <script src="../js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+<head>
+
+  <title>Winder Resource</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Winder Resource - Golang Snippets">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="../../icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  
+  <link rel="stylesheet" href="../../css/bulma.min.css">
+  <link rel="stylesheet" href="../../css/user.css">
+  <link rel="stylesheet" href="../../css/flags.css"> 
+
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+
+  <section class="hero">
+    <div class="hero-head">
+      <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+        <div class="navbar-brand">
+    	  <a class="navbar-item" href="../../index.html">
+            <img class="logo" src="../../img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+    	  </a>
+    	  <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+		
+    	<div id="navbarMenuHeroA" class="navbar-menu">
+
+          <div class="navbar-end">
+            <div class="navbar-item  is-hoverable" id="language">
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                  Project
+              </a>
+              <div class="navbar-dropdown">
+                <a href="../../project/go-encrypt/go-encrypt.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    Go-Encrypt
+                </a>
+                <a href="../../project/js-quick/js-quick.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    JS-Quick
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                  Help
+              </a>
+              <div class="navbar-dropdown">
+                <a href="#" onclick="openHelp('../../help/git.html');return false;" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    Git Commands
+                </a>
+              </div>
+            </div>
+				    
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                Snippet
+              </a>
+              <div class="navbar-dropdown">
+                <a href="../golang/snippet-golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                  Golang
+                </a>
+                <a href="../css/snippet-css.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                  Css
+                </a>
+                <a href="../javascript/snippet-javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                  Javascript
+                </a>
+                <a href="snippet-webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                  Webpage
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                Blog
+              </a>
+              <div class="navbar-dropdown">
+                <a href="../../blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    Golang
+                </a>
+                <a href="../../blog/javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    JavaScript
+                </a>
+                <a href="../../blog/nodejs/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    NodeJS
+                </a>
+                <a href="../../blog/webpage/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    WebPage
+                </a>
+              </div>
+            </div>
+				
+			      <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                  About Us
+              </a>
+              <div class="navbar-dropdown">
+                <a href="../../about/about.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    About
+                </a>
+                <a href="../../contact/contact.html" class="navbar-item  is-uppercase is-size-7 has-text-weight-semibold">
+                    Contact
+                </a>
+                <a href="../../history/history.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                    History
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-3">Webpage Snippets</h1>
+  			<p class="subtitle is-5">A list of interesting articles by other publishers, with a link to the webpage.</p>
+  		</div>
+    </div>
+  </section>
+	<section class="section" style="margin-top:-40px;">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-one-quarter">
+					<div class="image">
+						<a href="#" onclick="viewSnippet('https://certbot.eff.org');return false;"><img style="height:40px;" src="./img/certbot-logo-1A.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="column is-three-quarters">
+					<h2 class="title is-5">
+						<a href="#" onclick="viewSnippet('https://certbot.eff.org/instructions');return false;">EFF Certbot enables Lets Encrypt certificate generation.</a>
+					</h2>
+					<div class="subtitle is-6">
+
+						<a href="#" onclick="viewSnippet('https://certbot.eff.org/instructions');return false;">
+							<span class="tag golang">Golang</span>
+						</a>
+						<p>Certbot is a free, open source software tool for automatically using Let’s Encrypt certificates on manually-administrated websites to enable HTTPS.</p> 
+						<div>
+							<a href="#" onclick="openSnippet('https://certbot.eff.org/instructions');return false;">Continue Reading....</a>
+						</div>
+					</div>
+				</div>
+      		</div>
+
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="image">
+            <a href="#" onclick="viewSnippet('https://web.dev');return false;"><img style="height:40px;" src="./img/webdev-logo.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="column is-three-quarters">
+          <h2 class="title is-5">
+            <a href="href="#" onclick="viewSnippet('https://web.dev/customize-install/');return false;">Provide a custom install experience.</a>
+          </h2>
+          <div class="subtitle is-6"> 
+            
+            <a href="#" onclick="viewSnippet('https://web.dev/customize-install/');return false;">
+              <span class="icon">
+                <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+              </span>
+              April 30, 2020
+            </a>
+            <p>Many browsers make it possible for you to enable and promote the installation of your Progressive Web App (PWA) directly within the user interface of your PWA. Installation (sometimes formerly referred to as Add to Home Screen), makes it easy for users to install your PWA on their mobile or desktop device. Installing a PWA adds it to a user's launcher, allowing it to be run like any other installed app.</p> 
+						<div>
+							<a href="#" onclick="openSnippet('https://web.dev/customize-install/');return false;">Continue Reading....</a>
+						</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="image">
+            <a href="https://developers.google.com/web/tools/workbox/" target="_blank"><img style="height:40px;" src="./img/Workbox-Logo-Grey.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="column is-three-quarters">
+          <h2 class="title is-5">
+            <a href="https://developers.google.com/web/tools/workbox/" target="_blank">Creating Tray Icons using Go in Windows - Part 1.</a>
+          </h2>
+          <div class="subtitle is-6"> 
+            <a href="https://developers.google.com/web/tools/workbox/" target="_blank">
+              <span class="tag golang">Golang</span>
+            </a>  
+            <a href="https://developers.google.com/web/tools/workbox/" target="_blank">
+              <span class="icon">
+                <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+              </span>
+              October 18, 2019
+            </a>
+          </div>
+        </div>
+	  </div>
+
+	  </div>
+	</section>
+
+  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+  
+  <script src="../../js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/user.js"></script>
+  <script src="../../js/cookie.js"></script>
+  <script src="../../js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script>
+  
+</body>
+
+</html>
+
+https://web.dev/customize-install/
