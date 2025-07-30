@@ -1,0 +1,47 @@
+html {
+	font-family: 'Open Sans';
+}
+
+body{
+	font-family: 'Open Sans';
+}
+
+section{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.navbar-item img.logo {
+	min-height: 3.00rem;
+	max-height: 3.00rem;
+}
+
+.tag.config {
+	background-color: red;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.local {
+	background-color: orange;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.branch {
+	background-color: green;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.file {
+	background-color: blue;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.remote {
+	background-color: purple;
+	color:white;
+	font-weight:bold;
+}
