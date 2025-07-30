@@ -1,0 +1,389 @@
+<!doctype html>
+
+<html class="no-js" lang="en-gb">
+
+<head>
+  <title>Winder Resource</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Winder Resource - Go-Encrypt project introduction">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="../../../index/icon.png">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  
+  <link rel="stylesheet" href="../../../index/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../index/css/flags.css">
+  <link rel="stylesheet" href="./css/local.css">
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <section class=hero>
+    <div class=hero-head>
+      <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../../index.html">
+            <img class="logo" src="../../img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+          </a>
+          
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        
+        <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item  is-hoverable" id="language">
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Project
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="./go-encrypt.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Go-Encrypt
+                        </a>
+                        <a href="../js-quick/js-quick.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            JS-Quick
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Help
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="#" onclick="openHelp('../../help/git.html');return false;" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Git Commands
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Snippet
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="../../snippet/golang/snippet-golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Golang
+                      </a>
+                      <a href="../../snippet/css/snippet-css.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Css
+                      </a>
+                      <a href="../../snippet/js/snippet-javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Javascript
+                      </a>
+                      <a href="../../snippet/webpage/snippet-webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Webpage
+                      </a>
+                  </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Blog
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../../blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Golang
+                        </a>
+                        <a href="../../blog/javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          JavaScript
+                      </a>
+                        <a href="../../blog/nodejs/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            NodeJS
+                        </a>
+                        <a href="../../blog/webpage/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            WebPage
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        About Us
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../../about/about.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            About
+                        </a>
+                        <a href="../../contact/contact.html" class="navbar-item  is-uppercase is-size-7 has-text-weight-semibold">
+                          Contact
+                        </a>
+                        <a href="../../history/history.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          History
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+    <div class=hero-body>
+        <div class=container>
+          <div class=columns>
+            <div class="column is-two-thirds">
+              <h1 class="title is-3 is-spaced">
+                <p>Go-Encrypt</p>
+              </h1>
+              <p class="subtitle is-6" style="padding-top:10px;padding-bottom:10px;">Go-Encrypt is a user service connecting to the USB EnigmaKey encryption device. The service runs on localhost port 46502. The service api is callable from any webpages implementing the go-encrypt interface.</p>
+            </div>
+            <div class="column is-third"  style="padding-top:0px;">
+              <!-- <div class="raised card"> -->
+                <div class=card-image>
+                  <figure class="image is-3by2">
+                    <img src="./img/go-encrypt-300x200.jpg" style="padding:30px 30px;">
+                  </figure>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section" id="downloads" style="margin-top:-40px;padding-top:0px;padding-bottom:0px;">
+    <div class=container>
+      <h1 class="title is-5">Downloads</h1>
+      <p class="subtitle is-6" style="padding-left:20px;margin-top:-10px;">After downloading a binary release suitable for your system, please follow the<a href="#install" style="padding-left:10px;">installation instructions.</a></p>
+      <div class="container" style="padding-left:10px;">
+        <div style="background-color:lightgrey;border:2px solid lightblue;font-weight:bold;padding:10px;margin:10px;width:280px;display:inline-block;">
+          <p>Microsoft Windows</p>
+          <a href="./download/go-encrypt-0.1-windows-amd64.zip" download style="padding-left:10px;">go-encrypt-0.1-windows-amd64.zip - alpha testing</a>
+        </div>
+        
+        <div style="background-color:lightgrey;border:2px solid lightblue;font-weight:bold;padding:10px;margin:10px;width:280px;display:inline-block;">
+          <p>Apple macOS</p>
+          <a href="./download/go-encrypt-0.1-darwin-amd64.dmg" disabled download style="padding-left:10px;">go-encrypt-0.1-darwin-amd64.dmg - alpha testing</a>
+          <!--<a href="./download/go-encrypt-0.1-darwin-amd64.pkg" download style="padding-left:10px;">go-encrypt-0.1-darwin-amd64.pkg</a>-->
+        </div>
+        
+        <div style="background-color:lightgrey;border:2px solid lightblue;font-weight:bold;padding:10px;margin:10px;width:280px;display:inline-block;">
+          <p>Linux</p>
+          <a href="./download/go-encrypt-0.1-linux-amd64.tar.gz" download style="padding-left:10px;">go-encrypt-0.1-linux-amd64.tar.gz - alpha testing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="section" style="padding-top:0px;padding-bottom:0px;">
+    <div class="container"> 
+      <div class="columns">
+        <div class="column is-one-half">
+          <div class="image is-2by1">
+            <a href="./img/go-encrypt.jpg"><img src="img/go-encrypt.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="column is-one-half">
+          <h1 class="title is-4">
+            Go-Encrypt webapp manager.<br>
+            <span class="title is-6">
+            <a href="#install">Test the Go-Encrypt service.</a>
+            </span>
+          </h1>
+          
+          <div class="subtitle is-6"> 
+            <a href="/categories/golang">
+              <span class="tag golang">Golang</span>
+            </a>
+              
+            <!-- <a href="./golang/plumbing-the-syscall-library-for-microsoft-windows-os.html">
+            
+              <span class="icon">
+                <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+              </span> -->
+              April 26, 2020
+
+          </div>
+          <p>Go-Encrypt is designed with a built in admin interface to demonstrate and test the Go-Encrypt service, using the USB EnigmaKey.</p> <li style="margin-left:20px;">The USB Enigmakey can be activated and deactivated from within the app</li>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="card" style="box-shadow:none;">
+        <header class="card-header" style="box-shadow:none;">
+          <div class="card-header-title has-text-info is-centred"></div>
+          <a class="card-header-icon card-toggle" style="padding-top:0px;padding-bottom:0px;">Continue reading 
+            
+            <i class="fa fa-angle-down" style="margin-left:200px;"></i>
+          </a>
+        </header>
+        <div class="card-content is-hidden" style="padding-top:10px;padding-bottom:10px;">
+            <div class="columns">
+              <div class="column is-one-half">
+                <h1 class="title is-5">EHT management</h1>
+                <p class="subtitle is-6" style="padding-top:10px;margin-bottom:10px;">Open the EHT Manager</p>
+                <li style="margin-left:20px;font-size:14px;">Click on the EHT Manager link.</li>
+                <p class="subtitle is-7" style="padding-top:10px;font-size:14px;">A list will be displayed showing the current EHT loaded into the EnigmaKey.</p>
+                <p class="subtitle is-6" style="padding-top:10px;margin-bottom:10px;">Create a new EHT</p>
+                <li style="margin-left:20px;font-size:14px;">Click the button [Create EHT].</li>
+                <li style="margin-left:20px;font-size:14px;">Enter a new name for the EHT in the popup text box.</li>
+                <li style="margin-left:20px;font-size:14px;">Click the Create button.</li>
+                <li style="margin-left:20px;font-size:14px;">Cancel the action (click the button Create EHT again).</li>
+                <p class="subtitle is-7" style="padding-top:10px;margin-bottom:10px;">A new EHT will be created at the next available position in the EnigmaKey EHT table.</p>
+              </div>
+              <div class="column is-one-half" style="padding-top:0px;padding-bottom:0px;">
+                <p class="subtitle is-6">
+                  <li style="margin-left:20px;">The EnigmaKey stores internally generated random enhanced hash tables (EHT), which can be selected to carry out encryption internally within the device, or to produce temporary hash tables, to be used with host encryption.</li>
+                  <li style="margin-left:20px;"></li>
+                </p>
+              </div>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr style="padding-top:0px;padding-bottom:0px;">
+	<section class="section" style="padding-top:0px;padding-bottom:0px;">
+		<div class="container"> 
+			<div class="columns">
+				<div class="column is-one-half">
+					<div class="image is-2by1">
+						<a href="./img/go-vault.jpg"><img src="img/go-vault.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="column is-one-half">
+					<h1 class="title is-4">
+            DataVault webapp demo.<br>
+            <span class="title is-6">
+						<a href="#install">Test the Go-Encrypt service.</a>
+            </span>
+          </h1>
+          
+					<div class="subtitle is-6"> 
+						<a href="/categories/golang">
+							<span class="tag golang">Golang</span>
+						</a>
+						  
+						<!-- <a href="./golang/plumbing-the-syscall-library-for-microsoft-windows-os.html">
+							<span class="icon">
+								<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+							</span> -->
+            </a>
+							April 26, 2020
+						
+					</div>
+					<p>DataVault is designed to demonstrate and test the Go-Encrypt service.</p> <li style="margin-left:20px;">The USB Enigmakey can be activated / deactivated from within the app</li> <li style="margin-left:20px;">The app encrypts and decrypts writing to files on host.</li>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card" style="box-shadow:none;">
+        <header class="card-header" style="box-shadow:none;">
+          <div class="card-header-title has-text-info is-centred" padding-top:0px;padding-bottom:0px;></div>
+          <a class="card-header-icon card-toggle" style="padding-top:0px;padding-bottom:0px;">Continue reading 
+            
+            <i class="fa fa-angle-down" style="margin-left:200px;"></i>
+          </a>
+        </header>
+        <div class="card-content is-hidden" style="padding-top:10px;padding-bottom:10px;">
+            <div class="columns">
+              <div class="column is-one-half">
+              </div>
+              <div class="column is-one-half">
+                <p class="subtitle is-6">
+                  <li style="margin-left:20px;">The app encrypts / decrypts writing to files on host.</li>
+                </p>
+              </div>
+            </div>
+         
+        </div>
+      </div>
+
+		</div>
+	</section>
+  <hr style="padding-top:0px;padding-bottom:0px;">
+  <section class="section" style="padding-top:0px;padding-bottom:0px;" id="install">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-5">
+            Installation Instructions.
+          </h1>
+          
+          <div class="container" style="padding-left:10px;">
+            <div class="subtitle is-6 ">
+              <p class="has-text-danger">In order to run the Go-Encrypt webapp demo it is necessary to have obtained a USB EnigmaKey encryption device.</p>
+              <br>
+              <p>Download the correct installer for your system, from the <a href="#downloads">Downloads</a> section.</p>
+            </div>
+          </div>
+          <br>
+          <div class="container" style="padding-left:10px;">
+            <div class="subtitle is-6 ">
+              <h1 class="title is-6 bold" style="padding-top:10px;margin-bottom:10px;">
+                Windows Installer.
+              </h1>
+              <li style="margin-left:20px;">Unzip the windows package</li>
+              <li style="margin-left:20px;">Double Click or use the menu Open command to launch the installer - go-encrypt-0.1-windows-amd64.exe .</li>
+              <li style="margin-left:20px;">Click accept to run with administrator priviledges.</li>
+              <li style="margin-left:20px;">We would recommend installing with default options, so just click accept on all of the prompts.</li>
+              <li style="margin-left:20px;">The program should take just a few seconds to install.</li>
+            </div>
+          </div>
+          <br>
+          <div class="container" style="padding-left:10px;">
+            <div class="subtitle is-6 ">
+              <h1 class="title is-6 bold" style="padding-top:10px;margin-bottom:10px;">
+                Mac OSX Installer.
+              </h1>
+              <li style="margin-left:20px;">Open the disk image - go-encrypt-0.1-darwin-amd64.dmz - </li>
+              <li style="margin-left:20px;">Press and drag the Go-Encrypt.app into the Applications folder and release.</li>
+              <li style="margin-left:20px;">The Go-Encrypt apllication will now be installed in your Applicatios directory and is ready to use.</li>
+            </div>
+          </div>
+          <br>
+          <div class="container" style="padding-left:10px;">
+            <div class="subtitle is-6 ">
+              <h1 class="title is-6 bold" style="padding-top:10px;margin-bottom:10px;">
+                Linux Installer.
+              </h1>
+              <li style="margin-left:20px;">Copy the package tarball - go-encrypt-0.1-linux-amd64.tar.gz to a temporary directory. Example: 'home/user/test' directory.</li>
+              <li style="margin-left:20px;">Unpack the package tarball - go-encrypt-0.1-linux-amd64.tar.gz in the temp directory.</li>
+              <li style="margin-left:20px;">In the temp directory [Right Click] on the file - install.sh - and use the menu Open command to launch the installer.</li>
+              <li style="margin-left:20px;">Enter your user password to run with administrator priviledges.</li>
+              <li style="margin-left:20px;">When prompted type 'y' and press [enter] to create new encryption keys for the admin server.</li>
+              <li style="margin-left:20px;">The program should take just a few seconds to install.</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../../../index/js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/user.js"></script>
+  <script src="../../js/cookie.js"></script>
+  <script src="../../js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script> -->
+  
+</body>
+</html>

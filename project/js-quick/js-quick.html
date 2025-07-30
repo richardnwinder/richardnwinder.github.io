@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+<head>
+
+  <title>Winder Resource</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Winder Resource - JS-Quick webapp introduction.">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="../../index/icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  
+  <link rel="stylesheet" href="../../css/bulma.min.css">
+  <link rel="stylesheet" href="../../css/flags.css">
+  <link rel="stylesheet" href="./css/local.css">
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <section class=hero>
+    <div class=hero-head>
+      <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+        <div class="navbar-brand">
+    			<a class="navbar-item" href="../../index.html">
+            <img class="logo" src="../../img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+    			</a>
+			
+    			<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+		
+    		<div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item  is-hoverable" id="language">
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Project
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../go-encrypt/go-encrypt.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Go-Encrypt
+                        </a>
+                        <a href="./js-quick.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            JS-Quick
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Help
+                    </a>
+                    <div class="navbar-dropdown">
+                      <a href="#" onclick="openHelp('../../help/git.html');return false;" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Git Commands
+                      </a>
+                    </div>
+                </div>
+      				  <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Snippet
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="../../snippet/golang/snippet-golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Golang
+                      </a>
+                      <a href="../../snippet/css/snippet-css.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Css
+                      </a>
+                      <a href="../../snippet/js/snippet-javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Javascript
+                      </a>
+                      <a href="../../snippet/webpage/snippet-webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Webpage
+                      </a>
+                  </div>
+              </div>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Blog
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../../blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Golang
+                        </a>
+                        <a href="../../javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            JavaScript
+                        </a>
+                        <a href="../../blog/nodejs/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            NodeJS
+                        </a>
+                        <a href="../../blog/webpage/" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            WebPage
+                        </a>
+                    </div>
+                </div>
+    				
+    			      <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        About Us
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../../about/about.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            About
+                        </a>
+                        <a href="../../contact/contact.html" class="navbar-item  is-uppercase is-size-7 has-text-weight-semibold">
+                          Contact
+                        </a>
+                        <a href="../../history/history.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            History
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+    <div class=hero-body>
+        <div class=container>
+          <h1 class="title is-3 is-spaced" style="color:red;">
+            JS-Quick
+          </h1>
+          <div class=columns>
+            <div class="column is-half">
+              
+              <p class="subtitle is-6"><span style="color:red;">JS-Quick</span> came about as a need to have an easily accessible testbed for webpage development featuring the full use of html, css and javascript. The requirement was for something in between the defacto standard <a href="https://jsfiddle.net">JSFiddle Code Playground</a> and a full blown IDE.</p>
+              <p class="subtitle is-6">To make the testbed more versatile the full Head section of the html code was included in the editor, affording the user full control from within the page.</p>
+              <p class="subtitle is-6"><span style="color:red;">JS-Quick</span> compiles to a single file with inline css and javascript.</p>
+            </div>
+            <div class="column is-half"  style="padding-top:0px;">
+              <!-- <div class="raised card"> -->
+                <div class=card-image>
+                  <figure class="image is-3by2">
+                    <img src="./img/js-quick300x200.png" style="padding:30px 30px;">
+                  </figure>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+          <h1 class="title is-6">
+            Test the <span style="color:red;">JS-Quick</span> webapp 
+            <a style="margin-left:50px;" href="https://winder.dynu.net/jsquick">https://winderresource.org/jsquick</a>
+          </h1>
+          <br>
+          <p class="subtitle is-6">Future development could well see it expanded to include individual style and script files. This will depend on how well these features maybe received, after consulting user experience and feedback.</p>
+          <p class="subtitle is-6">At the present time on-line files can always be included in the head section by using their complete url, which is particularly useful if you wish to include a responsive framework such as <a href="https://bulma.io">Bulma</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <script src="../../js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/user.js"></script>
+  <script src="../../js/cookie.js"></script>
+  <script src="../../js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script>
+  
+</body>
+
+</html>

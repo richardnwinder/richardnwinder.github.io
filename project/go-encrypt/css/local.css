@@ -1,0 +1,41 @@
+html {
+	font-family: 'Open Sans';
+}
+
+body{
+	font-family: 'Open Sans';
+}
+
+section{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.navbar-item img.logo {
+	min-height: 3.00rem;
+	max-height: 3.00rem;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-menu.is-sidebar-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .aside-burger {
+    display: none;
+  }
+  .navbar-menu.is-sidebar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column.is-sidebar-menu {
+    display: none;
+  }
+}
+
+
+
