@@ -1,0 +1,70 @@
+html {
+	font-family: 'Open Sans';
+}
+body{
+	font-family: 'Open Sans';
+}
+section{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+h1.logo {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.navbar-item img.logo {
+	min-height: 3.00rem;
+	max-height: 3.00rem;
+}
+
+.tag.config {
+	background-color: red;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.local {
+	background-color: orange;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.branch {
+	background-color: green;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.file {
+	background-color: blue;
+	color:white;
+	font-weight:bold;
+}
+
+.tag.remote {
+	background-color: purple;
+	color:white;
+	font-weight:bold;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-menu.is-sidebar-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .aside-burger {
+    display: none;
+  }
+  .navbar-menu.is-sidebar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column.is-sidebar-menu {
+    display: none;
+  }
+}

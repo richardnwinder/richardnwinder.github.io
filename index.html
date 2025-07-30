@@ -1,7 +1,234 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype html>
+
+<html class="no-js" lang="en-gb">
+
+<head>
+  <title>Winder Resource</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Winder Resource - Data Technology">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="css/flags.css"> 
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<section class=hero>
+  <div class=hero-head>
+    <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+      <div class="navbar-brand">
+  			<a class="navbar-item" href="index.html">
+          <img class="logo" src="./img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+  				<!-- <h1 style="color:blue;margin:0px;padding:0px;" class="logo grey">Winder <span style="color:orange;font-size:50%;">Resource.org</h1> -->
+  				<!-- <h3 class="link-item">JSQuick</h3> -->
+  			</a>
+  			
+  			<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+  		
+  		<div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+              <div class="navbar-item  is-hoverable" id="language">
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Project
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="project/go-encrypt/go-encrypt.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Go-Encrypt
+                      </a>
+                      <a href="project/js-quick/js-quick.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          JS-Quick
+                      </a>
+                  </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Help
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="#" onclick="openHelp('./help/git.html');return false;" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Git Commands
+                      </a>
+                  </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Snippet
+                  </a>
+                  <div class="navbar-dropdown">
+          				    <a href="snippet/golang/snippet-golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Golang
+                      </a>
+                      <a href="snippet/css/snippet-css.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Css
+                      </a>
+                      <a href="snippet/js/snippet-javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Javascript
+                      </a>
+                      <a href="snippet/webpage/snippet-webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                        Webpage
+                      </a>
+                  </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                    Blog
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Golang
+                      </a>
+                      <a href="blog/javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          JavaScript
+                      </a>
+                      <a href="blog/nodejs.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          NodeJS
+                      </a>
+                      <a href="blog/webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          WebPage
+                      </a>
+                  </div>
+              </div>
+  				
+  			      <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      About Us
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="about/about.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          About
+                      </a>
+                      <a href="contact/contact.html" class="navbar-item  is-uppercase is-size-7 has-text-weight-semibold">
+                          Contact
+                      </a>
+                      <a href="history/history.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          History
+                      </a>
+                  </div>
+              </div>  				
+            </div>
+        </div>
+    </nav>
+  </div>
+  <div class=hero-body>
+      <div class=container>
+        <div class=columns>
+          
+          <div class="column is-two-thirds">
+            <h1 class="title is-3 is-spaced">
+              <p>Data Technology</p>
+            </h1>
+            <p class="is-6 subtitle">
+            Winder Resource started out in 1972 working with IBM 370 series, and the then mainstream cobol language.
+            </p>
+            <p class="is-6 subtitle">
+            During the 80's and 90's with the advances in C and C++, development was centred on CAD/CAM and CNC control, specialising in laser and rule processor development for the packaging industry.
+            </p>
+            <p class="is-6 subtitle">
+            Since 2010 most work has been on web-centric projects, and new languages such as Golang, NodeJs, Javascript and Python.
+            </p>
+          </div>
+          <div class="column is-third">
+            <div class="raised card">
+              <div class=card-image>
+                <figure class="image is-3by2">
+                  <img src=./img/layout/ibm370-15.jpg>
+                </figure>
+              </div>
+            </div>
+            <div style="margin:20px 30px 10px 30px;">
+              <a href="history/history.html">Read more.....</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- <div class="columns is-fullheight">
+	<div class="column is-2 is-sidebar-menu is-hidden-mobile" style="border-right:1px solid #888;overflow:hidden;">
+		<aside class="menu">
+			<img class="image" src="./img/branding/faceid.jpg" alt="Face Image">
+			<a href="contact/">  Richard Winder</a>
+			<hr>
+			<p class="menu-label">General</p>
+			<ul class="menu-list">
+				<li><a>Dashboard longer</a></li>
+				<li><a>Customers</a></li>
+			</ul>
+		</aside>
+	</div> -->
+
+<!-- Main Content -->
+<section class="section"  style="margin-top:-40px;padding-top:0px;padding-bottom:0px;">
+  <div class=container>
+    <h1 class="title is-4">Current projects <span class="subtitle is-6"><a href="blog/projects.html">follow....</a></span></h1>
+    <!-- <div class="columns is-multiline">
+      <div class="column is-three-quarters"> -->
+      <div class="columns is-vcentered is-mobile is-multiline">
+        <div class="column is-one-third-tablet is-half-mobile">
+          <a href="./project/go-encrypt/go-encrypt.html">
+          <img class="image grayscale" src=./project/go-encrypt/img/go-encrypt-300x200.png alt="Go_Encrypt logo" style="padding:0px 30px;">
+          </a>
+        </div>
+        <div class="column is-one-third-tablet is-half-mobile">
+          <a href="./project/go-proxylb/go-proxylb.html">
+          <img class="image grayscale" src=./project/go-proxylb/img/go-proxylb-300x200.png alt="Go-Proxylb logo" style="padding:0px 30px;">
+          </a>
+        </div>
+        <div class="column is-one-third-tablet is-half-mobile">
+          <a href="./project/js-quick/js-quick.html">
+          <img class="image grayscale" src=./project/js-quick/img/js-quick-300x200.png alt="Js-Quick logo" style="padding:0px 30px;">
+          </a>
+        </div>
+      </div>
+	  <!-- </div> -->
+  </div>
+
+</section>
+  
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script>
+  
 </body>
+
 </html>
