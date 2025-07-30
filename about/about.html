@@ -1,0 +1,307 @@
+<!doctype html>
+
+<html class="no-js" lang="en-gb">
+
+<head>
+  <title>Winder Resource</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Winder Resource - About">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  
+  <link rel="stylesheet" href="../css/bulma.css">
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/flags.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body style="height: 100vh;" onload="openSettings()" onunload="saveSettings()">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <section class=hero>
+    <div class=hero-head>
+      <nav class="navbar" style="padding-left:10px;padding-right:10px;">
+        <div class="navbar-brand">
+    			<a class="navbar-item" href="../index.html">
+            <img class="logo" src="../img/branding/winderresource-logo.png" alt="Winder Resource Logo">
+    				<!-- <h1 style="margin:0px;padding:0px;" class="logo grey">Winder Resource</h1> -->
+    				<!-- <h3 class="link-item">JSQuick</h3> -->
+    			</a>
+    			
+    			<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+    		
+    		<div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item  is-hoverable" id="language">
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Project
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../project/go-encrypt/go-encrypt.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Go-Encrypt
+                        </a>
+                        <a href="../project/js-quick/js-quick.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            JS-Quick
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                        Help
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="#" onclick="openHelp('../help/git.html');return false;" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Git Commands
+                        </a>
+                    </div>
+                </div>
+    				    <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Snippet
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../snippet/golang/snippet-golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Golang
+                        </a>
+                        <a href="../snippet/css/snippet-css.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Css
+                        </a>
+                        <a href="../snippet/js/snippet-javascript.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Javascript
+                        </a>
+                        <a href="../snippet/webpage/snippet-webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          Webpage
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      Blog
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="../blog/golang.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            Golang
+                        </a>
+                        <a href="../blog/nodejs.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            NodeJS
+                        </a>
+                        <a href="../blog/webpage.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                            WebPage
+                        </a>
+                    </div>
+                </div>
+    				
+    			      <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link is-uppercase is-size-7 has-text-weight-semibold">
+                      About Us
+                  </a>
+                  <div class="navbar-dropdown">
+                      <a href="about.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          About
+                      </a>
+                      <a href="../contact/contact.html" class="navbar-item  is-uppercase is-size-7 has-text-weight-semibold">
+                          Contact
+                      </a>
+                      <a href="../history/history.html" class="navbar-item is-uppercase is-size-7 has-text-weight-semibold">
+                          History
+                      </a>
+                  </div>
+              </div> 
+    				
+    			          				
+              </div>
+          </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+
+      <div class="container">
+        <h1 class="title is-3 is-spaced">
+          <p>About Us</p>
+        </h1>
+
+        <div class="columns">
+          <div class="column is-three-quarters">  
+            <p class="is-6 subtitle">
+            Winder Resource was created to follow the changing world of data technology. Up until the end of the 1990's, storage, content and applications were running on host installations.
+            </p>
+            <p class="is-6 subtitle">
+            With the arrival of a new decade, advances in internet technology had resulted in a gradual movement of services towards online storage, content and more lately applications. Whilst C and C++ had been the main programming language used up until then, new languages were arriving to develop these new technologies, and in 2010 a descision was taken to change to working with the Golang programming language.
+            </p>
+            <p class="is-6 subtitle">
+            Since 2010 most work has been on web-centric projects, using languages such as Golang, NodeJs, Javascript and Python.
+            </p>
+          </div>
+          <div class="column is-quarter">
+            <div class="raised card">
+              <div class=card-image>
+                <figure class="image is-1by1">
+                  <img src="../img/branding/faceid.jpg" alt="Richard Winder">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title is-4 is-spaced">
+          <p>Running helps</p>
+        </h1>
+
+        <div class="columns">
+          <div class="column is-three-quarters">  
+            <p class="is-6 subtitle">
+            For me, running has always been the best method to reduce stress and relax mentally. I have trained and competed regularly with my clubs, ever since I can remember. At the age of 13 , I was approached by my PE master, and invited to take part in an inter-schools X-country match against other schools in East Yorkshire. From that day on I was hooked. Starting with the school X-country, created an escape from the compulsory Rugby Union matches, where every time I ended up being crushed to death!
+            </p>
+          </div>
+          <div class="column is-quarter">
+            <div class="raised card">
+              <div class=card-image>
+                <figure class="image is-1by1">
+                  <img src="../img/running/faceid.jpg" alt="Hull University 10K">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="box-shadow:none;">
+          <header class="card-header" style="box-shadow:none;">
+            <div class="card-header-title has-text-info"></div>
+            <a class="card-header-icon card-toggle" style="padding-top:0px;padding-bottom:0px;">Continue reading
+              
+              <i class="fa fa-angle-down" style="margin-left:20px;margin-right:220px;"></i>
+            </a>
+          </header>
+          <div class="card-content is-hidden" style="padding-top:10px;padding-bottom:10px;padding-left:0px;padding-right:0px;">
+            <div class="columns">
+              <div class="column is-three-quarters">
+                <p class="is-6 subtitle">
+                Joining Hull Harriers in my early years, I had a good degree of success in inter counties and national youths X-country. Alas, upon moving up to college, I lost contact with my running urges and didnt rekindle them until reaching 34 years old. Having seen a friend feature in an article about running, I promptly joined Hornsea Harriers, a small club in my home town on the east coast, made famous by its pottery at that time.
+                </p>
+                <p class="is-6 subtitle">
+                Susequently I joined a track club, Hull Spartan, and was priviledged to be able to compete with some of the very best track athletes in the Northern League. Rapidly approaching 40 my times were getting back to being very competitive, but unfortunately shortly after my 40th birthday, I suffered an illness, brought on by a virus. It was so debilitating, I was unable to undertake any form of exercise for around 3 years.
+                </p>
+                <p class="is-6 subtitle">
+                Around this time, my wife had taken to running marathons, and I was the bag handler. When an offer came for her to run in New York in 1999, I determined that if I was going all that way, I would not go to just stand and watch. The training was strict and organised, and the training pace I found to my liking. Every time I tried previously, I was breaking down, expecting too much and  overdoing the training, which did not suit my condition.
+                </p>
+                <p class="is-6 subtitle">
+                Having managed to overcome my competitive spirit, I managed several international marathons, but more importantly, to get back into club running with my first club, now renamed City of Hull AC. It was not at the level I had been used to, but at least I was still running. This has stood me in good stead, it has enabled me to continue running through my 50's, and into my 60's, without suffering any debilitating injuries.
+                </p>
+                <p class="is-6 subtitle">
+                15 minute 5000 metres have now long gone, but more recently, I ran 4 hr 02 min at Toulouse last October, at age 67. I can't wait till Im 70!
+                </p>
+              </div>
+              <div class="column is-quarter">
+                <div class="raised card">
+                  <div class=card-image>
+                    <figure class="image is-1by1">
+                      <img src="../img/running/Bridlington10.jpg" alt="Bridlington 10 mile">
+                    </figure>
+                  </div>
+                </div>
+                <br>
+                <div class="raised card">
+                  <div class=card-image>
+                    <figure class="image is-3by2">
+                      <img src="../img/running/steeplechase.jpg" alt="Steeplechase">
+                    </figure>
+                  </div>
+                </div>
+                <br>
+                <div class="raised card">
+                  <div class=card-image>
+                    <figure class="image is-1by1">
+                      <img src="../img/running/running-50.jpg" alt="Running at 50">
+                    </figure>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+
+    </div>
+
+    <div class="hero-foot">
+      <div class="container" style="background-image: linear-gradient(to right, white, black);">
+        <div class="columns is-multiline">
+          <div class="column is-third">
+            <div class="content has-text-centered">
+              <div>
+                <figure class="image"><img src="../img/branding/winderresource-logo.png" alt="Winder Resource"></figure>
+              </div>
+              
+              <a href="https://twitter.com/Richardwinder" title="Twitter Profile" target=_blank><span class="icon"><i class="fab fa-twitter fa-1x" aria-hidden=true></i></span>
+              </a>
+              <a href="https://www.linkedin.com/in/RichardWinder" title="LinkedIn Profile" target=_blank><span class="icon"><i class="fab fa-linkedin fa-1x" aria-hidden=true></i></span>
+              </a>
+              <a href="https://gitlab.com/WinderResource" title="Gitlab Profile" target=_blank><span class="icon"><i class="fab fa-gitlab fa-1x" aria-hidden=true></i></span>
+              </a>
+              <a href="https://github.com/WinderResource" title="Github Profile" target=_blank><span class="icon"><i class="fab fa-github fa-1x" aria-hidden=true></i></span>
+              </a>
+              <a href="mailto:mail@WinderResource.org" title="EMail Profile" target=_blank><span class="icon"><i class="fas fa-envelope fa-1x" aria-hidden=true></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-third"></div>
+          <div class="column is-third">
+            <h4 class="title is-7 has-text-white">EMail</h4>
+            <div class="subtitle is-7 has-text-light">mail@WinderResource.org</div>
+            <div class="subtitle is-7 has-text-light">
+              <p>Winder Resource,</p>
+              <p>Saint Christ,</p>
+              <p>19, Route de Cesar,</p>
+              <p>32170 Laas,</p>
+              <p>France</p>
+            </div>
+          </div>
+        </div><span style="color:darkblue;">© Winder Resource 2010-2020; all rights reserved.<span>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/cookie.js"></script>
+  <script src="../js/country.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162691459-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162691459-1');
+  </script>
+  
+</body>
+
+</html>
