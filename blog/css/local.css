@@ -1,0 +1,17 @@
+html {
+	font-family: 'Open Sans';
+}
+
+body{
+	font-family: 'Open Sans';
+}
+
+section{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.navbar-item img.logo {
+	min-height: 3.00rem;
+	max-height: 3.00rem;
+}
